@@ -1,0 +1,11 @@
+.hero-container {
+  background-image: url('/assets/images/O7MF5N0.jpg');
+  background-size: cover;
+}
+
+.hero-jumbotron {
+  @extend .jumbotron;
+  // padding: map-get($spacers, 5) * 2;
+  color: $white;
+  background: transparent;
+}

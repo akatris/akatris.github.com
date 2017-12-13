@@ -1,2 +1,26 @@
+html {
+  font-size: 0.9rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.9rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 0.95rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1rem;
+  }
+}
+
 @import "styles/contactbar";
 @import "styles/navbar";
+@import "styles/section";
+@import "styles/hero";

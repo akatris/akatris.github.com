@@ -3,24 +3,17 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-
+  <div class="page-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-icon">
+          <i class="fa fa-angle-down fa-5x"></i>
+        </div>
         <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <span class="text-uppercase font-weight-bold">{{site.title | uppercase}}</span>
+           - {{site.data.akatris.tagline}}
         </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-
+      </div>
+    </div>
+  </div>
 </div>
