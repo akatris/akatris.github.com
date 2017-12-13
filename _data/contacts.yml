@@ -7,18 +7,3 @@
   url: mailto://contact@akatris.com
   display: contact@akatris.com
   icon: fa-envelope
-
-- name: facebook
-  url: https://fb.me/akatris.company
-  display: akatris.company
-  icon: fa-facebook
-
-- name: twitter
-  url: https://twitter.com/Akatris.Mada
-  display: akatris.mada
-  icon: fa-twitter
-
-- name: google plus
-  url: mailto://contact@akatris.com
-  display: contact@akatris.com
-  icon: fa-google-plus
