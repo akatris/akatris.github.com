@@ -1,4 +1,6 @@
 .contact-bar {
+  @extend .d-none;
+  @extend .d-md-block;  
   background: $primary;
   color: $white;
 }
