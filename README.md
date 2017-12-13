@@ -9,4 +9,5 @@ $git clone git@gitlab.com:akatris/akatris.com.git
 $cd akatris.com
 $yarn
 $bundle install
-``` 
+$./configure
+```
