@@ -1,0 +1,19 @@
+<div class="contact-bar">
+  <div class="container">
+    <div class="contact-bar-content">
+      {% for contact in site.data.contacts %}
+        <div class="contact-bar-content-with-text">
+          <i class="fa fa-2x {{contact.icon }}"></i>
+          <a class="contact-bar-content-link" href="{{contact.url}}">{{contact.display}}</a>
+        </div>
+      {% endfor %}
+  
+      {% for social_network in site.data.social_networks %}
+        <span class="contact-bar-content-without-text">
+          <i class="contact-bar-content-without-text-bg"></i>
+          <i class="contact-bar-content-without-text-icon {{ social_network.icon }}"></i>
+        </span>
+      {% endfor %}
+    </div>
+  </div>
+</div>

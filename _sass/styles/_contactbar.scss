@@ -1,0 +1,43 @@
+.contact-bar {
+  background: $primary;
+  color: $white;
+}
+
+.contact-bar-content {
+  @extend .d-flex;
+  @extend .justify-content-end;
+}
+
+.contact-bar-content-with-text {
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .mr-3;
+  font-size: 0.9rem;
+}
+
+.contact-bar-content-link {
+  @extend .ml-2;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: none;    
+  }
+}
+
+.contact-bar-content-without-text {
+  @extend .fa-stack; 
+  @extend .fa-lg;
+}
+
+.contact-bar-content-without-text-bg {
+  @extend .fa;
+  @extend .fa-circle; 
+  @extend .fa-stack-2x;
+}
+
+.contact-bar-content-without-text-icon {
+  @extend .fa;
+  @extend .fa-stack-1x;
+  color: $primary;
+}

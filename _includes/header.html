@@ -1,10 +1,3 @@
 <header class="site-header" role="banner">
-{% for contact in site.data.contacts %}
-  {{ contact.name }}
-  <i class="fa {{contact.icon }}"></i>
-{% endfor %}
-
-{% for social_network in site.data.social_networks %}
-  {{ social_network.name }}
-{% endfor %}
+  {% include header/contact-bar.html %}
 </header>
