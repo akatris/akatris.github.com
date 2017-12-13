@@ -4,7 +4,8 @@
   @extend .navbar-light;
   @extend .bg-white;
   @extend .align-items-stretch;
-  
+  @extend .p-md-0;
+
   .ak-navbar-brand {
     @extend .navbar-brand;
 
