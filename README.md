@@ -11,3 +11,10 @@ $yarn
 $bundle install
 $./configure
 ```
+
+## Running website locally
+
+```bash
+$yarn run dev
+$bundle exec jekyll serve
+```
