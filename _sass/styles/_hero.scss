@@ -1,7 +1,10 @@
 .hero-container {
+  @extend .p-md-5;
+}
+
+.hero {
   background-image: url('/assets/images/O7MF5N0.jpg');
   background-size: cover;
-  @extend .p-md-5;
 }
 
 .hero-jumbotron {
