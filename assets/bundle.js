@@ -10329,10 +10329,9 @@ return jQuery;
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_bootstrap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_bootstrap__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__forces_slider__ = __webpack_require__(5);
 
 
 
@@ -16665,6 +16664,51 @@ try {
 
 module.exports = g;
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
+
+
+__WEBPACK_IMPORTED_MODULE_0_jquery___default()(function() {
+  // Hide undisplayed slide.
+  __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#force-slider .slide-item').each(function(index) {
+    if (index != 0) {
+      __WEBPACK_IMPORTED_MODULE_0_jquery___default()(this).removeClass('d-none').hide('fast')
+    }
+  })
+
+  const slideLength = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#force-slider .slide-item').length
+
+  var currentSlide = 0;
+
+  setInterval(function() {
+
+    //Get the current slide item
+    const slideItem = __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#force-slider .slide-item:nth('+currentSlide+')')
+    
+    // Hide slide
+    __WEBPACK_IMPORTED_MODULE_0_jquery___default()(slideItem).fadeOut(1000, function() {
+      if(currentSlide == slideLength - 1) {
+        currentSlide = 0;
+      } else {
+        currentSlide++;
+      }
+
+      // Wait 500ms before displaying the next slide
+      setTimeout(function() {
+        __WEBPACK_IMPORTED_MODULE_0_jquery___default()('#force-slider .slide-item:nth('+currentSlide+')').fadeIn(1000);        
+      }, 500)
+    });
+    
+    
+  }, 5000)
+  console.log('document ready')
+});
 
 /***/ })
 /******/ ]);

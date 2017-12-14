@@ -35,26 +35,20 @@ layout: default
       </div>
       <div class="section-content">
         <div class="row">
-          <div class="col-md-4">
-            
+          <div class="col-md-4 force-illustration">
+            <img src="/assets/images/OBDL960.jpg" alt="" srcset="">
           </div>
-          <div class="col-md-8 bg-primary">
-            {% for force in site.data.forces %}
-              <div class="force">
-                <header>
-                  <h3>{{force.title}}</h3>
-                </header>
-                <section>
-                  <p>
-                    {{force.description}}
-                  </p>
-                </section>
-              </div>
-            {% endfor %}
+          <div class="col-md-8 slider-container">
+            <div id="force-slider" class="slider">
+              {% for force in site.data.forces %}
+                {% include components/force.html force=force %}
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  {% include components/button-up.html%}
+  0341265396
+  {% include components/button-up.html  %}
 </div>
