@@ -118,6 +118,7 @@
 
 .contacts {
   @extend .my-0;
+  @extend .pl-md-5;
   h4 {
     color: $primary;
   }
