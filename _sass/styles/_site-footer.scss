@@ -1,0 +1,9 @@
+.site-footer {
+  @extend .mt-5;
+  @extend .py-5;
+  @extend .d-flex;
+  @extend .align-items-center;
+  @extend .justify-content-center;
+  color: $white;
+  background: $black;
+}
