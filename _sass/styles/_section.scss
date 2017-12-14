@@ -18,6 +18,11 @@
 
   .slider {
     @extend .my-md-5;
+    display: block;
+  }
+
+  .slider-container {
+    height: 18rem;
   }
 }
 
@@ -98,14 +103,16 @@
   @extend .d-flex;
   
   @extend .flex-column;
-  @extend .flex-md-row;
+  @extend .flex-lg-row;
   .contact-content-with-text {
     @extend .d-flex;
     @extend .align-items-center;
   
     .contact-content-link {
       @extend .my-2;
-      @extend .mx-2;    
+      @extend .ml-2;
+      @extend .mr-4;    
+      
       font-size: .9rem;
       color: $black;
   

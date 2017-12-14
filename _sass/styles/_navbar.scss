@@ -50,6 +50,9 @@
         @extend .d-flex;
         @extend .align-items-center;
         font-weight: bold;
+        &:hover {
+          color: $primary;
+        }
       }
     }
   }

@@ -1,4 +1,6 @@
 .button-nav-up {
+  @extend .d-none;
+  @extend .d-md-inline;
   position: fixed;
   bottom: 2rem;
   right: 2rem;
