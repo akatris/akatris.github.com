@@ -3,17 +3,58 @@ layout: default
 ---
 
 <div class="home">
-  <div class="page-section">
+  <div class="home-section page-section">
     <div class="container">
       <div class="section-header">
         <div class="section-header-icon">
           <i class="fa fa-angle-down fa-5x"></i>
         </div>
-        <h2>
+        <h2 id="about akatris">
           <span class="text-uppercase font-weight-bold">{{site.title | uppercase}}</span>
            - {{site.data.akatris.tagline}}
         </h2>
       </div>
+      <div class="section-content">
+        <p class="lead">
+          {{site.data.akatris.description}}
+        </p>
+      </div>
     </div>
   </div>
+
+  <div class="force-section page-section">
+    <div class="container">
+      <div class="section-header d-none">
+        <div class="section-header-icon">
+          <i class="fa fa-angle-down fa-5x"></i>
+        </div>
+        <h2 id="forces">
+          <span class="text-uppercase font-weight-bold">{{site.title | uppercase}}</span>
+           - {{site.data.akatris.tagline}}
+        </h2>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          <div class="col-md-4">
+            
+          </div>
+          <div class="col-md-8 bg-primary">
+            {% for force in site.data.forces %}
+              <div class="force">
+                <header>
+                  <h3>{{force.title}}</h3>
+                </header>
+                <section>
+                  <p>
+                    {{force.description}}
+                  </p>
+                </section>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include components/button-up.html%}
 </div>

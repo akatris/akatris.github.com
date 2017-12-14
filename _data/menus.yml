@@ -1,5 +1,5 @@
 - label: akatris
-  url: '/#akatris'
+  url: '#akatris'
 
 - label: services
   url: '/#services'

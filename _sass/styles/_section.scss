@@ -2,3 +2,12 @@
   color: $primary;
   text-align: center;
 }
+
+.home-section {
+  p.lead {
+    @extend .my-md-5;
+    @extend .mx-md-5;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
