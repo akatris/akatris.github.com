@@ -77,3 +77,19 @@
     text-shadow: 0 0 2px $white;
   }
 }
+
+.tool-container {
+  @extend .my-5;
+  .tool-list {
+    @extend .d-flex;
+    @extend .flex-column;
+    @extend .flex-wrap;
+    @extend .flex-md-row;    
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    
+  }
+  img {
+    @extend .m-4;
+  }
+}

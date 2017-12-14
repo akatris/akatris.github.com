@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="tool-list">
+    {% for tool in include.tools %}
+      <div>
+        <img src="/assets/images/{{tool}}.png" alt="{{tool}}">
+      </div>
+    {% endfor %}
+  </div>
+</div>
