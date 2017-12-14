@@ -75,6 +75,32 @@ layout: default
       {% include components/tools.html tools=site.data.expertise.tools %}
     </div>
   </div>
+
+  <div class="contact-section page-section">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-header-icon">
+            <i class="fa fa-angle-down fa-5x"></i>
+          </div>
+          <h2 id="about akatris">
+            <span class="text-uppercase font-weight-bold">Contact</span>
+          </h2>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-md-6 order-2 order-md-1">
+              {% include components/contact-form.html%}
+            </div>
+            <div class="col-md-6 contacts order-1 order-md-2 ">
+                {% include components/contact-detail.html 
+                    contact_us=site.data.akatris.contact_us 
+                    contacts=site.data.contacts
+                    social_networks=site.data.social_networks %}                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   0341265396
   {% include components/button-up.html  %}
 </div>

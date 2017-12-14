@@ -1,4 +1,5 @@
 .section-header {
+  @extend .my-5;
   color: $primary;
   text-align: center;
 }
@@ -39,8 +40,7 @@
 
 .service-section {
   .service-item {
-    @extend .py-3;
-    @extend .my-5;
+    @extend .my-md-5;
     text-align: center;
     img {
       @extend .my-2;
@@ -91,5 +91,45 @@
   }
   img {
     @extend .m-4;
+  }
+}
+
+.contact-container {
+  @extend .d-flex;
+  
+  @extend .flex-column;
+  @extend .flex-md-row;
+  .contact-content-with-text {
+    @extend .d-flex;
+    @extend .align-items-center;
+  
+    .contact-content-link {
+      @extend .my-2;
+      @extend .mx-2;    
+      font-size: .9rem;
+      color: $black;
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.contacts {
+  @extend .my-0;
+  h4 {
+    color: $primary;
+  }
+  .contact-social-network {
+    @extend .my-5;
+  }
+
+  .contact-social-network-url {
+    @extend .mr-3;
+    text-decoration: none;
+    .fa-circle {
+      color: $black;
+    }
   }
 }
