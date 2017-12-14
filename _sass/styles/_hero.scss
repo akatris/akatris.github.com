@@ -1,15 +1,18 @@
 .hero-container {
   @extend .p-md-5;
+  @extend .mx-md-5;
 }
 
 .hero {
   background-image: url('/assets/images/O7MF5N0.jpg');
   background-size: cover;
+  @extend .p-md-5;
+  
 }
 
 .hero-jumbotron {
   @extend .jumbotron;
-  // padding: map-get($spacers, 5) * 2;
+  @extend .m-md-5;
   color: $white;
   background: transparent;
 }
