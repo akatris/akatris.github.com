@@ -17,6 +17,17 @@
   font-size: 0.9rem;
 }
 
+.social-network-url {
+  color: $white;
+  &:hover {
+    .contact-bar-content-without-text-icon {
+      color: $white;
+    }
+    .contact-bar-content-without-text-bg {
+      color: $primary;
+    }
+  }
+}
 .contact-bar-content-link {
   @extend .ml-2;
   color: $white;

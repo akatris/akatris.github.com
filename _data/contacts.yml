@@ -1,5 +1,5 @@
 - name: phone
-  url: phone://+261 34 29 207 64
+  url: tel:+261342920764
   display: +261 (0) 34 29 207 64
   icon: fa-phone
 

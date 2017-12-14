@@ -9,10 +9,12 @@
       {% endfor %}
   
       {% for social_network in site.data.social_networks %}
-        <span class="contact-bar-content-without-text">
-          <i class="contact-bar-content-without-text-bg"></i>
-          <i class="contact-bar-content-without-text-icon {{ social_network.icon }}"></i>
-        </span>
+        <a class="social-network-url" href="{{social_network.url}}">
+          <span class="contact-bar-content-without-text">
+            <i class="contact-bar-content-without-text-bg"></i>
+            <i class="contact-bar-content-without-text-icon {{ social_network.icon }}"></i>
+          </span>
+        </a>
       {% endfor %}
     </div>
   </div>
