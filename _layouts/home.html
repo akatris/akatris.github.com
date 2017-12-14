@@ -49,6 +49,26 @@ layout: default
       </div>
     </div>
   </div>
+
+  <div class="service-section page-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-header-icon">
+          <i class="fa fa-angle-down fa-5x"></i>
+        </div>
+        <h2 id="forces">
+          <span class="text-uppercase font-weight-bold">Nos services</span>
+        </h2>
+      </div>
+      <div class="section-content">
+        <div class="row">
+          {% for service in site.data.services %}
+            {% include components/service.html service=service %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
   0341265396
   {% include components/button-up.html  %}
 </div>

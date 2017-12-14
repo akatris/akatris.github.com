@@ -36,3 +36,23 @@
     
   }
 }
+
+.service-section {
+  .service-item {
+    @extend .py-3;
+    @extend .my-5;
+    text-align: center;
+    img {
+      @extend .my-2;
+    }
+    h3 {
+      @extend .my-3;
+      color: $primary;
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+    p {
+      @extend .my-5;
+    }
+  }
+}

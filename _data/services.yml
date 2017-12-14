@@ -1,0 +1,19 @@
+- title: conception
+  description: >
+    Nous concevons des sites et des applications modernes et performantes tout en 
+    respectant vos attentes.
+  illustration: conception.png
+
+- title: Développement
+  description: >
+    Nous créons des sites web et applications conformes à vos attentes en 
+    utilisant les technologies de développement les plus récentes et 
+    les plus stable.
+  illustration: developpement.png
+
+- title: Maintenance
+  description: >
+    Nous pouvons donner un coup de jeune à votre site ou ajouter de nouvelles 
+    fonctionnalités à votre application.
+  illustration: maintenance.png
+    
