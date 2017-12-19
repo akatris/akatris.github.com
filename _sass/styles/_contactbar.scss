@@ -31,6 +31,7 @@
 .contact-bar-content-link {
   @extend .ml-2;
   color: $white;
+  font-size: 0.8rem;
 
   &:hover {
     color: $white;

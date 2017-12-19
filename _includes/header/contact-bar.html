@@ -1,9 +1,9 @@
-<div class="contact-bar">
+<div class="contact-bar animated fadeInDown">
   <div class="container">
     <div class="contact-bar-content">
       {% for contact in site.data.contacts %}
         <div class="contact-bar-content-with-text">
-          <i class="fa fa-2x {{contact.icon }}"></i>
+          <i class="fa fa-lg {{contact.icon }}"></i>
           <a class="contact-bar-content-link" href="{{contact.url}}">{{contact.display}}</a>
         </div>
       {% endfor %}
